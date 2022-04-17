@@ -1,0 +1,139 @@
+:root {
+  --main-theme: white;
+  --light-grey: #b5b5b5;
+  --accent1: #858ecc;
+  --accent2: #8e98d7;
+  --accent3a: #d2d7f9;
+
+  --font: 'Roboto Slab'
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font), sans-serif;
+}
+
+body {
+  background: var(--main-theme);
+  margin: 0;
+}
+
+#text-submit {
+  background: var(--accent2);
+  border-style: none;
+  border-radius: 2px;
+  font-size: 1.01em;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.header-title {
+  padding: 10px;
+  margin: 0px;
+}
+
+.header-text {
+  padding: 10px;
+  margin: 10px;
+}
+
+.header {
+  background: var(--accent1);
+  padding: 0;
+  color: #1c1c1c;
+  margin: 0 0 0;
+  font-size: 0.8em;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.column {
+  float: left;
+  width: 47.5%;
+  padding: 10px;
+}
+#divider {
+  float: left;
+  width: 5%;
+  padding: 5px;
+}
+
+.content-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#upload-container {
+  background: var(--main-theme);
+  color: var(--light-grey);
+  border: 3px dashed var(--light-grey);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  height: 300px;
+  margin: 10px;
+}
+
+#file-upload {
+  opacity: 0;
+  padding: 10px;
+  width:  100%;
+  height: 300px;
+}
+
+#text-entry-container {
+  padding: 10px;
+  text-align: center;
+}
+
+#text-entry:active {
+  background: var(--accent3b);
+}
+
+textarea {
+  background: var(--accent3a);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-family: var(--font), sans-serif;
+  vertical-text-align: top;
+  padding: 5px;
+  font-size: 1.1em;
+  height: 300px;
+  width: 100%;
+  resize: none;
+}
+
+.text {
+  margin: 10px;
+}
+
+#music-player {
+  text-align: center;
+  margin: 40px;
+}
+
+@media (max-width: 300px) {
+  .column {
+    width: 100%;
+  }
+}
